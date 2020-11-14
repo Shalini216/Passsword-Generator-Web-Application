@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body >
+<form method="POST" action="/g">
+<!-- password length section-->
+  <div class="form-group">
+    <label for="exampleInputEmail1">Password Length</label>
+    <input type="number" class="form-control" name="length" id="length" >
+    </div>
+
+<!--Check box section-->
+ <div >
+    <input type="checkbox" name="symbol" id="symbol" class="form-check-input" >
+    <label for="symbol">Symbols</label>
+  </div>
+  <div >
+    <input type="checkbox" name="number" id="number" class="form-check-input" >
+    <label  for="number">Numbers</label>
+  </div>
+  <div >
+    <input type="checkbox" name="capital" id="capital" class="form-check-input" >
+    <label for="capital">Capital Alphabets</label>
+  </div>
+  <div >
+    <input type="checkbox" name="small" id="small"class="form-check-input" >
+    <label  for="small">Small Alphabets</label>
+  </div>
+
+
+
+
+<!--Buttons for generating password and Copy password-->
+<div>
+  <button type="submit" name="Generate" value="generate password"class="button GenerateBtn">Generate Password</button>
+  </div>
+  
+  
+</form>
+
+</body>
+</html>
