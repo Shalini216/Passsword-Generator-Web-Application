@@ -1,15 +1,18 @@
 from flask import Flask, render_template, request
-import random, string, pyperclip
-app = Flask(__name__)
+import random, string
 
+app = Flask(__name__)
 @ app.route('/')
 def password():
-    return render_template('inputbox.html')
-@ app.route('/g',methods=['POST'])
-def others():
+    return render_template('index.html')
+
+
+@ app.route('/',methods=['POST'])
+def Password_Generator():
+
     password_inputs=[]
     pass_len=request.form.get('length')
-    pass_len=int(pass_len)
+    pass_len=int((pass_len))
     if request.form.get('symbol'):
         s1=string.punctuation
         password_inputs.extend(list(s1))
@@ -23,9 +26,7 @@ def others():
         s4=string.ascii_lowercase
         password_inputs.extend(list(s4))
 
-    if request.form.get("Generate"):
+    if request.form.get('Generate'):
         Your_password="".join(random.sample(password_inputs, pass_len))
-        return (Your_password)
-
-
+        return render_template('index.html',Your_password=Your_password)
 app.run(debug=True)
