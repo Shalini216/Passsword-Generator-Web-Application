@@ -2,18 +2,51 @@
 <html>
 <head>
 	<title></title>
+  <style type="text/css">
+    body {
+  text-align: center;
+  background-color:rgb(192,192,192);
+}
+button{
+  background-color: #008CBA;
+  padding: 10px 25px;
+  text-align: center;
+   font-size: 16px;
+  margin: 2px 2px;
+/* Blue */
+}
+.foo{
+padding: 13px;
+width: 300px;
+}
+
+h1{
+  font-size: 60px;
+ text-shadow:5px 5px 5px red;
+}
+p{
+  font-size: 20px;
+}
+form{
+  font-size: 25px;
+}
+    
+  </style>
  
 </head>
 
 <body >
+
 <form method="POST" action="/">
 <h1>Password Generator</h1>
-
+<p >For Weak password: Select the length between 5 to 15</p>
+<p >For Strong password: Select the length between 16 to 200</p>
+<p >For a password that can not guessed: Select the length between 5 to 15</p>
 
 <!-- password length section starts-->
  <div id="sec_options">
 
-    <div class="chboxl">Password Length:</div>
+    <div class="chboxl"><b>Password Length:</b></div>
     <div class="chboxr">
         <select id="length" name="length">
              <option value="5">5</option>
@@ -181,23 +214,24 @@ function myFunction() {
 
 <br>
 <!--Button to generate password-->
-<div class="button-wrapper">
-  <button class="ghost-button"  name="Generate"  value="generate password"class="button GenerateBtn">Generate Password</button>
+<div class="button">
+  <button class="button"  name="Generate"  value="generate password"class="button GenerateBtn">Generate Password</button>
   </div>
 <br>
 
 <!--Box to display password-->
-<p class="lead"><b>Your new password is</b></p>
-    <p class="lead"><input type="text" id="myInput" value="{{Your_password}}"></p>
+<p class="button"><b>Your new password is</b></p>
+    <p class="lead"><input type="text" id="myInput" class ="foo" value="{{Your_password}}"></p>
  
 <!--Button to copy password-->
-<button onclick="myFunction()" class="btn " type="button"  name="copy" >Copy password</button>
+<button onclick="myFunction()" class="button " type="button"  name="copy" >Copy password</button>
 
 <br><br>
 <!--Box to paste password-->
-<input placeholder="Paste here, to try!">
+<input class="foo" placeholder="Paste here, to try!">
   
 </form>
-
+<br>
+<br>
 </body>
 </html>

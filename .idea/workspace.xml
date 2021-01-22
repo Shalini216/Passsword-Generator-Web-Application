@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9449ad61-6de7-46a4-8e4e-cef650c096be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/password.py" beforeDir="false" afterPath="$PROJECT_DIR$/password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/inputbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inputbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +24,7 @@
   <component name="ProjectId" id="1jdW6RqqpLVMZMPFwdgHigJ1bFY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/flask-password-master" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Python Internship" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
